@@ -1,10 +1,10 @@
 {
-    "name": "openprovider/rest-client-php",
+    "name": "antoineveldhoven/rest-client-php",
     "type": "library",
     "authors": [
         {
-            "name": "eyudkin",
-            "email": "eyudkin@openprovider.ru"
+            "name": "Antoine Veldhoven",
+            "email": "antoine@invitado.nl"
         }
     ],
     "autoload": {
@@ -25,7 +25,7 @@
     },
     "description": "HTTP client for Openprovider API",
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.1",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
