@@ -1,10 +1,10 @@
 {
-    "name": "antoineveldhoven/rest-client-php",
+    "name": "openprovider/rest-client-php",
     "type": "library",
     "authors": [
         {
-            "name": "Antoine Veldhoven",
-            "email": "antoine@invitado.nl"
+            "name": "eyudkin",
+            "email": "eyudkin@openprovider.ru"
         }
     ],
     "autoload": {
