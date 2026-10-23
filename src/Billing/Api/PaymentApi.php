@@ -415,7 +415,7 @@ class PaymentApi
         if (isset($_tempBody)) {
             // $_tempBody is the method argument, if present
             if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($_tempBody));
+                $httpBody = \json_encode(ObjectSerializer::sanitizeForSerialization($_tempBody), JSON_THROW_ON_ERROR);
             } else {
                 $httpBody = $_tempBody;
             }
@@ -432,7 +432,7 @@ class PaymentApi
                 $httpBody = new MultipartStream($multipartContents);
 
             } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
+                $httpBody = \json_encode($formParams, JSON_THROW_ON_ERROR);
 
             } else {
                 // for HTTP post (form)
